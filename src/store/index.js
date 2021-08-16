@@ -1,8 +1,10 @@
 import { createStore } from "vuex";
 
 
-// Acrescentar transições
-// [DESKTOP] - Mudar o display dos items para grid e utilizar melhor o espaço de tela
+// (V) - Acrescentar transições
+// () - Salvar todos no local storage 
+// () - Salvar tema no local storage 
+// (X) - [DESKTOP] - Mudar o display dos items para grid e utilizar melhor o espaço de tela
 
 export default createStore({
   state: {

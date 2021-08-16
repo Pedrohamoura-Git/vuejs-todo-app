@@ -18,6 +18,11 @@ import Footer from './components/template/Footer'
 export default {
   name: "App",
   components: { Header, NewTodoInput, TodoList, Footer, },
+computed: {
+  todos() {
+    return this.$store.state.todos
+  },
+}
 };
 </script>
 
