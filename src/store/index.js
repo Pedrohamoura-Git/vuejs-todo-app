@@ -1,5 +1,9 @@
 import { createStore } from "vuex";
 
+
+// Acrescentar transições
+// [DESKTOP] - Mudar o display dos items para grid e utilizar melhor o espaço de tela
+
 export default createStore({
   state: {
     // darkTheme: true,

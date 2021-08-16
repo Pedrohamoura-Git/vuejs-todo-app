@@ -3,13 +3,13 @@
   <ul id="completed-list">
     <li v-if="UncheckedItems <= 1" class="cont">{{ UncheckedItems }} item Left</li>
     <li v-else class="cont">{{ UncheckedItems }} items Left</li>
-    <li @click="clearCompleted" class="clear-completed">clear completed</li>
   </ul>
   <ul id="filter-list"> 
     <li id="all-option" @click="allFn" :class="{'selected-option' :  options.allSelected}">all</li>
     <li id="active-option" @click="activeFn" :class="{'selected-option' : options.activeSelected}">active</li>
     <li id="completed-option" @click="completedFn" :class="{'selected-option' : options.completedSelected}">completed</li>
   </ul>
+  <span @click="clearCompleted" class="clear-completed">clear completed</span>
 </div>
 </template>
 
@@ -132,7 +132,6 @@ export default {
 #completed-list {
   display: flex;
   align-items: center;
-  flex: 1;
   justify-content: space-between;
   padding: 0;
 }
@@ -184,9 +183,20 @@ export default {
   color: var(--btn-color-active) !important;
 }
 
-
 #all-option:hover, #active-option:hover, #completed-option:hover, .clear-completed:hover {
   color: var(--btn-color-active);
   cursor: pointer;
+}
+
+@media (min-width: 480px) {
+  #options-list {
+    justify-content: space-around;
+  }
+  #filter-list {
+      margin: 0;
+      padding: 0;
+      position: static;
+      width: fit-content
+  }
 }
 </style>

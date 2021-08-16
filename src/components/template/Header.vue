@@ -37,50 +37,50 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style>
 header {
   display: flex;
   justify-content: space-between;
   margin: 2rem 0;
   position: relative;
 
-  // border: 1px solid green;
+  /* border: 1px solid green; */
+}
 
-  h1 {
-    display: inline;
-    color: var(--txt-color-h1);
-    font-size: clamp(15px, 8vw, 2.5rem);
-    letter-spacing: .5rem;
-    text-transform: uppercase;
+h1 {
+  display: inline;
+  color: var(--txt-color-h1);
+  font-size: clamp(15px, 8vw, 2.5rem);
+  letter-spacing: .5rem;
+  text-transform: uppercase;
 
-    // border: 1px solid greenyellow;
-  }
+  /* border: 1px solid greenyellow; */
+}
 
-  #ts-checkbox {
-    float: right;
-    opacity: 0;
-  }
+#ts-checkbox {
+  float: right;
+  opacity: 0;
+}
 
-  .theme-switcher {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    transform-style: preserve-3d;
-    transition: all .5s;
-  }
+.theme-switcher {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transform-style: preserve-3d;
+  transition: all .5s;
+}
 
-  #moon {
-    border-radius: 50%;
-    padding: 3px;
-    transition: all .5s;
+#moon {
+  border-radius: 50%;
+  padding: 3px;
+  transition: all .5s;
 
-  }
+}
 
-  #sun {
-    border-radius: 50%;
-    padding: 3px;
-    transition: all .5s;
-  }
+#sun {
+  border-radius: 50%;
+  padding: 3px;
+  transition: all .5s;
 }
 
 </style>

@@ -1,9 +1,10 @@
 <template>
 <div id="wrapper">
-  <div id="top">
+  <div id="showcase">
     <Header />
     <NewTodoInput />
     <TodoList />
+    <Footer />
   </div>
 </div>
 </template>
@@ -12,14 +13,15 @@
 import Header from './components/template/Header.vue'
 import NewTodoInput from './components/template/NewTodoInput'
 import TodoList from './components/template/TodoList'
+import Footer from './components/template/Footer'
 
 export default {
   name: "App",
-  components: { Header, NewTodoInput, TodoList, },
+  components: { Header, NewTodoInput, TodoList, Footer, },
 };
 </script>
 
-<style lang="scss">
+<style>
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root,
 :root.light {
@@ -70,14 +72,26 @@ body {
   position: relative;
   transition: background 0.2s;
   text-decoration: none;
+}
 
-  #wrapper {
-    // display: flex;
-    align-content: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 90%;
-  }
+#wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+  width: 90%;
+}
 
+#showcase {
+  margin-top: 2rem;
+  width: min(90%, 600px);
+}
+
+@media (min-width: 376px) {
+    body {
+      background: var(--bg-color-body) var(--img-bg-desktop) no-repeat top left;
+      min-width: 100%;
+      min-height: 210px;    
+    }
 }
 </style>
