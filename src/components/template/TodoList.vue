@@ -18,7 +18,7 @@
       </li>
       <OptionList key="optionList"/>
     </transition-group>
-    <p v-else class="no-todo-txt" key="no-todo-txt"><em>Seems like your life is in order.</em></p>
+    <p v-else class="no-todo-txt" key="no-todo-txt"><em>Seems like everything is in order.</em></p>
   </transition>
 </template>
 
@@ -140,15 +140,15 @@ watch: {
 .todo-text {
   color: var(--txt-color-cards);
   flex: 1;
-  font-size: .7rem;
+  font-size: .8rem;
   transition: .4s;
 }
 
 .checked-text {
   color: var(--txt-color-checked);
   flex: 1;
-  font-size: .65rem;
-  opacity: 70%;
+  font-size: .75rem;
+  opacity: 80%;
   text-decoration: line-through;
   transition: .4s;
 }
