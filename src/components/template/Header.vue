@@ -11,7 +11,6 @@
 <script>
 export default {
   components: {
-
   },
   data() {
     return {
@@ -22,10 +21,8 @@ export default {
   methods: {
     changeIcon() {
       const setTheme = theme => document.documentElement.className = theme;
-
       this.darkTheme = !(this.darkTheme)
       console.log(this.cont++)
-
       if(this.darkTheme) {
         setTheme('dark')
       } else { setTheme('light') }
@@ -43,25 +40,20 @@ header {
   justify-content: space-between;
   margin: 2rem 0;
   position: relative;
-
   /* border: 1px solid green; */
 }
-
 h1 {
   display: inline;
   color: var(--txt-color-h1);
   font-size: clamp(15px, 8vw, 2.5rem);
   letter-spacing: .5rem;
   text-transform: uppercase;
-
   /* border: 1px solid greenyellow; */
 }
-
 #ts-checkbox {
   float: right;
   opacity: 0;
 }
-
 .theme-switcher {
   cursor: pointer;
   display: flex;
@@ -69,18 +61,14 @@ h1 {
   transform-style: preserve-3d;
   transition: all .5s;
 }
-
 #moon {
   border-radius: 50%;
   padding: 3px;
   transition: all .5s;
-
 }
-
 #sun {
   border-radius: 50%;
   padding: 3px;
   transition: all .5s;
 }
-
 </style>

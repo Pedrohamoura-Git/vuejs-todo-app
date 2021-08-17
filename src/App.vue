@@ -1,12 +1,12 @@
 <template>
-<div id="wrapper">
-  <div id="showcase">
-    <Header />
-    <NewTodoInput />
-    <TodoList />
-    <Footer />
+  <div id="wrapper">
+    <div id="showcase">
+      <Header />
+      <NewTodoInput />
+      <TodoList />
+      <Footer />
+    </div>
   </div>
-</div>
 </template>
 
 <script>
@@ -19,11 +19,11 @@ export default {
   name: "App",
   components: { Header, NewTodoInput, TodoList, Footer, },
   created() {
-    const json = localStorage.getItem('todos')
-    var tempTodos = JSON.parse(json) || []
+    const jsonTodos = localStorage.getItem('todos')
+    var localTodos = JSON.parse(jsonTodos) || []
 
-    this.$store.commit('directlyMutateTodos', tempTodos)
-  }
+    this.$store.commit('directlyMutateTodos', localTodos)
+  },
 };
 </script>
 
@@ -72,12 +72,17 @@ body {
   color: hsl(236, 33%, 92%);
   font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0;
   padding: 0;
   position: relative;
   transition: background 0.2s;
   text-decoration: none;
+}
+
+#theme {
+  width: 100%;
+  min-height: 100vh;
 }
 
 #wrapper {
