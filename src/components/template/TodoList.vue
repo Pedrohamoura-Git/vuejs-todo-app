@@ -39,7 +39,6 @@ methods: {
     } else {
       this.todos[index].filter = 'active'
     }
-    console.log(this.todos[index].filter)
   },
   removeItem(index, event) {
     if(confirm("Are You Sure?")) {

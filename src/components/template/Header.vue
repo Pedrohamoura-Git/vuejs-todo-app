@@ -22,7 +22,6 @@ export default {
     changeIcon() {
       const setTheme = theme => document.documentElement.className = theme;
       this.darkTheme = !(this.darkTheme)
-      console.log(this.cont++)
       if(this.darkTheme) {
         setTheme('dark')
       } else { setTheme('light') }

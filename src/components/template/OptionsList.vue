@@ -39,12 +39,6 @@ export default {
       }
       this.options.allSelected = !this.options.allSelected;
       this.commitFilter('all')
-      
-      console.log(`
-        All: ${this.options.allSelected} | 
-        Active: ${this.options.activeSelected} | 
-        Completed: ${this.options.completedSelected}`
-      )
     },
     activeFn() {
       if(this.options.allSelected) {
@@ -55,12 +49,6 @@ export default {
       }
       this.options.activeSelected = !this.options.activeSelected;
       this.commitFilter('active')
-
-      console.log(`
-        All: ${this.options.allSelected} | 
-        Active: ${this.options.activeSelected} | 
-        Completed: ${this.options.completedSelected}`
-      )
     },    
     completedFn() {
       if(this.options.activeSelected) {
@@ -71,12 +59,6 @@ export default {
       }
       this.options.completedSelected = !this.options.completedSelected;
       this.commitFilter('completed')
-
-      console.log(`
-        All: ${this.options.allSelected} | 
-        Active: ${this.options.activeSelected} | 
-        Completed: ${this.options.completedSelected}`
-      )
     },
     commitFilter(payload) {
       this.$store.commit('mutateCurrentFilter', payload)
