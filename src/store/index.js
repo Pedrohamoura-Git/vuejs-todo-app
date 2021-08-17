@@ -1,9 +1,10 @@
 import { createStore } from "vuex";
 
 
-// (V) - Acrescentar transições
-// () - Salvar todos no local storage 
-// () - Salvar tema no local storage 
+// (V) - Acrescentar transições nos todos
+// (V) - Salvar todos no local storage 
+// () - Salvar tema no local storage
+// () - Acrescentar transições nos icones de tema 
 // (X) - [DESKTOP] - Mudar o display dos items para grid e utilizar melhor o espaço de tela
 
 export default createStore({
@@ -16,10 +17,10 @@ export default createStore({
   mutations: {
     addTodos(state, payload) {
         state.todos.push(payload)
-    },
+      },
     removeTodos(state, index) {
         state.todos.splice(index, 1)
-    },
+      },
     directlyMutateTodos(state, payload) {
       state.todos = payload
     },
@@ -30,6 +31,8 @@ export default createStore({
       state.currentFilter = payload
     }
   },
-  actions: {},
+  actions: {
+
+  },
   modules: {},
 });

@@ -53,7 +53,10 @@ methods: {
   },
   updateItemsLeft(value) {
     this.$store.commit('mutateUncheckedItems', value)
-  }
+  },
+  directlyMutateTodos(payload) {
+    this.$store.commit('directlyMutateTodos', payload)
+  },
 },
 computed: {
   todos() {
@@ -71,10 +74,15 @@ computed: {
       }
     });
   },
-}, 
+},
 watch: {
-
-  },
+  todos: {
+    deep: true,
+    handler() {
+      localStorage.setItem('todos', JSON.stringify(this.todos))
+    }
+  }
+}
 }
 </script>
 
