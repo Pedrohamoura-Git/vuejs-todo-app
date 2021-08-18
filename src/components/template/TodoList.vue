@@ -132,7 +132,7 @@ watch: {
   border-radius: 50%;
   cursor: pointer;
   height: 20px;
-  min-width: 20px;
+  width: 20px;
   position: relative;
   bottom: 2px;
 }
