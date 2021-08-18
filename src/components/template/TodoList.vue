@@ -126,6 +126,7 @@ watch: {
 }
 
 .checked{
+  display: flex;
   background-image: var(--bg-check);
   border: none;
   border-radius: 50%;
@@ -134,6 +135,11 @@ watch: {
   min-width: 20px;
   position: relative;
   bottom: 2px;
+}
+
+.checked svg {
+  align-self: center;
+  justify-self: center;
 }
 
 .todo-text {
@@ -147,7 +153,6 @@ watch: {
   color: var(--txt-color-checked);
   flex: 1;
   font-size: .75rem;
-  opacity: 80%;
   text-decoration: line-through;
   transition: .4s;
 }
