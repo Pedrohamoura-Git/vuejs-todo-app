@@ -41,10 +41,10 @@ Users should be able to:
 
 
 <span>
-  <img src="./design/desktop-preview.jpg" width="640px" style="display: inline">
+  <img src="src/assets/design/desktop-preview.jpg" width="640px" style="display: inline">
 </span>
 <span>
-  <img src="./design/mobile-design-dark.jpg" height="640px" style="display: inline">
+  <img src="src/assets/design/mobile-design-dark.jpg" height="640px" style="display: inline">
 </span>
 
 # MY SOLUTION - Frontend Mentor -  Todo app solution
