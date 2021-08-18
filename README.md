@@ -51,17 +51,18 @@ Users should be able to:
 
 
 <span>
-  <img src="./design/solution-desktop-dark.png" width="640px" style="display: inline">
+  <img src="src/assets/design/solution-desktop-dark.png" width="640px" style="display: inline">
 </span>
 <span>
-  <img src="./design/solution-mobile-dark.png" height="640px" style="display: inline">
+  <img src="src/assets/design/solution-mobile-dark.png" height="640px" style="display: inline">
 </span>
 
 
 
 ### Links
 
-- Live Site URL: [Add live site URL here](#)
+<!-- - Live Site URL: [https://pedro-todo-vuejs-app.netlify.app](Vue - Todo App) -->
+- Live Site: <a href="https://pedro-todo-vuejs-app.netlify.app" alt="Todo app" target="_blank">Todo app Challenge</a>
 
 ## My process
 
