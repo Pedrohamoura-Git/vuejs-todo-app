@@ -92,7 +92,7 @@ To my next project I want to test my JS skills by using an API.
 ### Useful resources
 
 - <a href="https://vuejs.org/v2/guide/transitions.html" alt="Enter/Leave & List Transitions" target="_blank">Enter/Leave & List Transitions</a>
-- <a href="https://www.youtube.com/watch?v=nOd8yVfu3N4" alt="Transitioning Between Elements"target="_blank">Transitioning Between Elements</a>
+- <a href="https://www.youtube.com/watch?v=nOd8yVfu3N4" alt="Transitioning Between Elements" target="_blank">Transitioning Between Elements</a>
 - <a href="https://animate.style" alt="CSS Transitions" target="_blank">CSS Transitions</a>
 - <a href="https://stackoverflow.com/questions/5915023/preventing-images-and-text-to-be-selected/5915056" alt="Animate.css" target="_blank">Animate.css</a>
 
