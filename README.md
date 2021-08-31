@@ -62,7 +62,7 @@ Users should be able to:
 ### Links
 
 <!-- - Live Site URL: [https://pedro-todo-vuejs-app.netlify.app](Vue - Todo App) -->
-- Live Site: <a href="https://pedro-todo-vuejs-app.netlify.app" alt="Todo app" target="_blank">Todo app Challenge</a>
+- Live Site: <a href="https://pedro-vuejs-todo-app.netlify.app" alt="Todo app" target="_blank">Todo app Challenge</a>
 
 ## My process
 
