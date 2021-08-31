@@ -75,6 +75,7 @@ Users should be able to:
 - CSS Animations
 - - CSS Transitions
 - - CSS Transform
+- SASS
 - Mobile-first workflow
 - Vue.JS
 - Vue.js Transitions
