@@ -1,15 +1,7 @@
 import { createStore } from "vuex";
 
-
-// (V) - Acrescentar transições nos todos
-// (V) - Salvar todos no local storage 
-// () - Salvar tema no local storage
-// () - Acrescentar transições nos icones de tema 
-// (X) - [DESKTOP] - Mudar o display dos items para grid e utilizar melhor o espaço de tela
-
 export default createStore({
   state: {
-    // darkTheme: true,
     todos: [],
     UncheckedItems: 0,
     currentFilter: 'all',
